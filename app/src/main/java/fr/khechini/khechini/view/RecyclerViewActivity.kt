@@ -13,6 +13,7 @@ import fr.khechini.khechini.databinding.ActivityRecyclerViewBinding
 import fr.khechini.khechini.model.MyObjectForRecyclerView
 import fr.khechini.khechini.viewmodel.AndroidVersionViewModel
 import fr.khechini.khechini.model.ObjectDataSample
+import kotlin.random.Random
 
 class RecyclerViewActivity : AppCompatActivity() {
 
@@ -41,6 +42,9 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         // We set the adapter to recycler view
         binding.recyclerView.adapter = adapter
+
+        binding.addItemButton.setOnClickListener { addRandomAndroidVersion() }
+        binding.deleteAllItemButton.setOnClickListener { deleteAndroidVersion() }
     }
 
     override fun onStart() {
@@ -51,6 +55,15 @@ class RecyclerViewActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         viewModel.androidVersionList.observe(this, androidVersionListObserver)
+    }
+
+    private fun addRandomAndroidVersion() {
+        val random = Random.nextInt(0, 1000)
+        viewModel.insertAndroidVersion("Android $random", random, "url:$random")
+    }
+
+    private fun deleteAndroidVersion() {
+        viewModel.deleteAllAndroidVersion()
     }
 
     private fun onItemClick(objectDataSample: ObjectDataSample, view: View) {
