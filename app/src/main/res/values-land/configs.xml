@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- We are in the portrait case (default) -->
+    <integer name="number_of_columns">4</integer>
+    <bool name="flag">true</bool>
+    <color name="background_of_something">#008080</color>
+    <string name="random_string">Landscape text</string>
+</resources>

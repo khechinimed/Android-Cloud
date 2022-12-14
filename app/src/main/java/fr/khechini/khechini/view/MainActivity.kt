@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         binding.mainButtonActivityStrings.setOnClickListener { goToString() }
 
         binding.mainButtonActivityResource.setOnClickListener { goToResources() }
+
+        binding.mainButtonActivityValuesLand.setOnClickListener { goToValuesLand() }
     }
 
     private fun goToActivityIntent() {
@@ -40,6 +42,8 @@ class MainActivity : AppCompatActivity() {
     private fun goToResources() {
         startActivity(Intent(this, ResourceActivity::class.java))
     }
+
+    private fun goToValuesLand() {
+        startActivity(Intent(this, ValuesLandActivity::class.java))
+    }
 }
-
-

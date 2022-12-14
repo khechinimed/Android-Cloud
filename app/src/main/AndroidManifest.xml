@@ -34,6 +34,9 @@
         <activity
             android:name=".view.ResourceActivity"
             android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.ValuesLandActivity"
+            android:parentActivityName=".view.MainActivity" />
     </application>
 
 </manifest>

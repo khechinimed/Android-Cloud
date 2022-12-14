@@ -4,5 +4,5 @@
     <integer name="number_of_columns">2</integer>
     <bool name="flag">false</bool>
     <color name="background_of_something">#FFCC33</color>
-    <string name="random_string">Random text</string>
+    <string name="random_string">Portrait text</string>
 </resources>
