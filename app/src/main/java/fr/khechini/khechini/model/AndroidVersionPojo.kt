@@ -9,4 +9,5 @@ data class ObjectDataHeaderSample(
 data class ObjectDataSample(
     val versionName: String,
     val versionCode: Int,
+    val versionImage: String,
 ) : MyObjectForRecyclerView(label = versionName)
