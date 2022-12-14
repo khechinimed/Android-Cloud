@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding.mainButtonRecyclerView.setOnClickListener { goToRecyclerView() }
 
         binding.mainButtonActivityStrings.setOnClickListener { goToString() }
+
+        binding.mainButtonActivityResource.setOnClickListener { goToResources() }
     }
 
     private fun goToActivityIntent() {
@@ -33,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun goToString() {
         startActivity(Intent(this, StringsActivity::class.java))
+    }
+
+    private fun goToResources() {
+        startActivity(Intent(this, ResourceActivity::class.java))
     }
 }
 
