@@ -1,8 +1,8 @@
-package fr.khechini.khechini.view
+package fr.khechini.khechini.yourFeature.view
 
 import android.view.LayoutInflater
-import android.view.ViewGroup
 import android.view.View
+import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -10,10 +10,9 @@ import com.bumptech.glide.Glide
 import fr.khechini.khechini.R
 import fr.khechini.khechini.databinding.ItemCustomRecyclerBinding
 import fr.khechini.khechini.databinding.ItemCustomRecyclerHeaderBinding
-import fr.khechini.khechini.model.MyObjectForRecyclerView
-import fr.khechini.khechini.model.ObjectDataHeaderSample
-import fr.khechini.khechini.model.ObjectDataSample
-import java.lang.RuntimeException
+import fr.khechini.khechini.yourFeature.model.MyObjectForRecyclerView
+import fr.khechini.khechini.yourFeature.model.ObjectDataHeaderSample
+import fr.khechini.khechini.yourFeature.model.ObjectDataSample
 
 private val diffItemUtils = object : DiffUtil.ItemCallback<MyObjectForRecyclerView>() {
 

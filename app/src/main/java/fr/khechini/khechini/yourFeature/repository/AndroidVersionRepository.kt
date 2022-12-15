@@ -1,10 +1,11 @@
-package fr.khechini.khechini.repository
+package fr.khechini.khechini.yourFeature.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.map
 import fr.khechini.khechini.architecture.CustomApplication
-import fr.khechini.khechini.model.LocalDataSourceSample
-import fr.khechini.khechini.model.ObjectDataSample
+import fr.khechini.khechini.yourFeature.model.LocalDataSourceSample
+import fr.khechini.khechini.yourFeature.model.ObjectDataSample
+
 
 class AndroidVersionRepository {
 
@@ -34,7 +35,7 @@ private fun ObjectDataSample.toRoomObject(): LocalDataSourceSample {
     )
 }
 
-private fun List<LocalDataSourceSample>.toObjectDataSample(): List<ObjectDataSample> {
+fun List<LocalDataSourceSample>.toObjectDataSample(): List<ObjectDataSample> {
     return map { eachItem ->
         ObjectDataSample(
             versionCode = eachItem.code,

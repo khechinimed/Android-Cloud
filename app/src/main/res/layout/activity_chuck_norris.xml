@@ -3,36 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".yourFeature.view.RecyclerViewActivity">
+    android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/chuckNorrisActivityRv"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layoutAnimation="@anim/item_animation_layout"
-        app:layout_constraintBottom_toTopOf="@+id/addItemButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chuckNorrisActivityAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:itemCount="3"
-        tools:listitem="@layout/item_custom_recycler" />
+        tools:itemCount="8"
+        tools:listitem="@layout/item_chuck_norris" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/addItemButton"
+    <Button
+        android:id="@+id/chuckNorrisActivityAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="add"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/chuckNorrisActivityDelete"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/deleteAllItemButton"
+    <Button
+        android:id="@+id/chuckNorrisActivityDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="delete all"
+        android:text="delete"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chuckNorrisActivityAdd" />
 </androidx.constraintlayout.widget.ConstraintLayout>

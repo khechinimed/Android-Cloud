@@ -1,11 +1,11 @@
-package fr.khechini.khechini.dao
+package fr.khechini.khechini.yourFeature.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import fr.khechini.khechini.model.LocalDataSourceSample
+import fr.khechini.khechini.yourFeature.model.LocalDataSourceSample
 
 @Dao
 interface AndroidVersionDao {

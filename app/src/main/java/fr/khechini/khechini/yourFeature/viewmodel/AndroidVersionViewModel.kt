@@ -1,13 +1,13 @@
-package fr.khechini.khechini.viewmodel
+package fr.khechini.khechini.yourFeature.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.map
 import androidx.lifecycle.viewModelScope
-import fr.khechini.khechini.model.MyObjectForRecyclerView
-import fr.khechini.khechini.model.ObjectDataHeaderSample
-import fr.khechini.khechini.model.ObjectDataSample
-import fr.khechini.khechini.repository.AndroidVersionRepository
+import fr.khechini.khechini.yourFeature.model.MyObjectForRecyclerView
+import fr.khechini.khechini.yourFeature.model.ObjectDataHeaderSample
+import fr.khechini.khechini.yourFeature.model.ObjectDataSample
+import fr.khechini.khechini.yourFeature.repository.AndroidVersionRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

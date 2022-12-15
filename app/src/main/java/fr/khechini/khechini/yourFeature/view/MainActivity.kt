@@ -1,8 +1,8 @@
-package fr.khechini.khechini.view
+package fr.khechini.khechini.yourFeature.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import fr.khechini.khechini.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

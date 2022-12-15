@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KHECHINI">
         <activity
-            android:name=".view.MainActivity"
+            android:name=".chuckNorris.view.ChuckNorrisActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,23 +23,23 @@
         </activity>
         <!-- Parent activity means we will have back button in top of activity and go to the specified activity -->
         <activity
-            android:name=".view.FirstActivity"
-            android:parentActivityName=".view.MainActivity" />
+            android:name="fr.khechini.khechini.yourFeature.view.FirstActivity"
+            android:parentActivityName="fr.khechini.khechini.yourFeature.view.MainActivity" />
         <activity
-            android:name=".view.SecondActivity"
-            android:parentActivityName=".view.FirstActivity" />
+            android:name="fr.khechini.khechini.yourFeature.view.SecondActivity"
+            android:parentActivityName="fr.khechini.khechini.yourFeature.view.FirstActivity" />
         <activity
-            android:name=".view.RecyclerViewActivity"
-            android:parentActivityName=".view.MainActivity" />
+            android:name="fr.khechini.khechini.yourFeature.view.RecyclerViewActivity"
+            android:parentActivityName="fr.khechini.khechini.yourFeature.view.MainActivity" />
         <activity
-            android:name=".view.StringsActivity"
-            android:parentActivityName=".view.MainActivity" />
+            android:name="fr.khechini.khechini.yourFeature.view.StringsActivity"
+            android:parentActivityName="fr.khechini.khechini.yourFeature.view.MainActivity" />
         <activity
-            android:name=".view.ResourceActivity"
-            android:parentActivityName=".view.MainActivity" />
-        <activity
-            android:name=".view.ValuesLandActivity"
-            android:parentActivityName=".view.MainActivity" />
-    </application>
+            android:name="fr.khechini.khechini.yourFeature.view.ResourceActivity"
+            android:parentActivityName="fr.khechini.khechini.yourFeature.view.MainActivity" />
 
+        <activity
+            android:name="fr.khechini.khechini.yourFeature.view.ValuesLandActivity"
+            android:parentActivityName="fr.khechini.khechini.yourFeature.view.MainActivity" />
+    </application>
 </manifest>

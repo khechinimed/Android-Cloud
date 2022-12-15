@@ -1,4 +1,4 @@
-package fr.khechini.khechini.view
+package fr.khechini.khechini.yourFeature.view
 
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
@@ -9,10 +9,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import fr.khechini.khechini.yourFeature.model.MyObjectForRecyclerView
+import fr.khechini.khechini.yourFeature.model.ObjectDataSample
+import fr.khechini.khechini.yourFeature.viewmodel.AndroidVersionViewModel
 import fr.khechini.khechini.databinding.ActivityRecyclerViewBinding
-import fr.khechini.khechini.model.MyObjectForRecyclerView
-import fr.khechini.khechini.viewmodel.AndroidVersionViewModel
-import fr.khechini.khechini.model.ObjectDataSample
 import kotlin.random.Random
 
 class RecyclerViewActivity : AppCompatActivity() {
